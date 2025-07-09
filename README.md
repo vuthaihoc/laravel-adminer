@@ -4,37 +4,14 @@ Light weight [Adminer](https://www.adminer.org) database management tool integra
 
 Various database support: MySQL, SQLite, PostgreSQL, Oracle, MS SQL, Firebird, SimpleDB, MongoDB, Elasticsearch, and etc.
 
-## v8.0 Update
+## Forked
 
-- Adminer update to v5.0.x (namespace added)
-
-> Notice: if you are using plugins, please check namespace with `Adminer`.
-
-## v7.2 Update
-
-- Laravel 12.x Compatibility
-- Adminer update to v4.17.1
-
-## v7.0 New Features
-
-- Laravel 11.x Compatibility
-- Adminer plugins support
-
-## v6.0 New Features
-
- Make life easier with minimized package setup =)
-
-- Enable laravel auto package discovery
-- New config setting: `middleware` (default value: `auth`)
-- Enable env variables to setup adminer config
-    - `ADMINER_ENABLED`
-    - `ADMINER_AUTO_LOGIN`
-    - `ADMINER_ROUTE_PREFIX`
+Original package [onecentlin/laravel-adminer](https://github.com/onecentlin/laravel-adminer)
 
 ## Installation
 
 ```
-composer require onecentlin/laravel-adminer
+composer require hocvt/laravel-adminer --dev
 ```
 
 OR
@@ -42,14 +19,14 @@ OR
 Update `composer.json` in require section:
 
 ```json
-"require": {
-    "onecentlin/laravel-adminer": "^7.0"
+"require-dev": {
+    "hocvt/laravel-adminer": "^7.0"
 },
 ```
 
 Run:
 ```
-composer update onecentlin/laravel-adminer
+composer update hocvt/laravel-adminer
 ```
 
 ## Register package

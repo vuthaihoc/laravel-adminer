@@ -45,7 +45,7 @@ return [
     |       'middleware' => ['auth', 'adminer']
     |
     */
-    'middleware' => 'auth',
+    'middleware' => env('ADMINER_MIDDLEWARE', 'auth'),
 
     /*
     |--------------------------------------------------------------------------

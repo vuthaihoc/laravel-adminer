@@ -51,5 +51,7 @@ class ServiceProvider extends BaseServiceProvider
 
     public function register()
     {
+        $configPath = __DIR__ . '/../config/adminer.php';
+        $this->mergeConfigFrom($configPath, 'adminer');
     }
 }

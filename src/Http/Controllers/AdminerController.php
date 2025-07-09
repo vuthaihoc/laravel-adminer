@@ -82,6 +82,8 @@ class AdminerController extends Controller
                 return 'server';
             case 'sqlsrv':
                 return 'mssql';
+            case 'crdb':
+                return 'pgsql';
             default:
                 if (is_null($driver)) {
                     return 'server';
